@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+/* ==================================================
+   GLOBAL & NESTED ELECTRIC BLUE SCROLLBAR (KAIROS ADDIS)
+   Electric Blue Theme: #1565F0
+   ================================================== */
+
+/* Standard CSS scrollbar styling (Firefox, modern Chromium 121+) */
+:root,
+html,
+body,
+*,
+*::before,
+*::after {
+  scrollbar-width: thin;
+  scrollbar-color: #1565F0 #070b12;
+}
+
+/* WebKit / Chromium (Chrome, Edge, Safari, Opera, Brave) */
+::-webkit-scrollbar,
+*::-webkit-scrollbar,
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track,
+*::-webkit-scrollbar-track,
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+  background: #070b12;
+}
+
+::-webkit-scrollbar-thumb,
+*::-webkit-scrollbar-thumb,
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  background: #1565F0;
+  border-radius: 9999px;
+  border: 2px solid #070b12;
+  transition: background-color 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover,
+*::-webkit-scrollbar-thumb:hover,
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover {
+  background: #2979FF;
+}
+
+::-webkit-scrollbar-thumb:active,
+*::-webkit-scrollbar-thumb:active,
+html::-webkit-scrollbar-thumb:active,
+body::-webkit-scrollbar-thumb:active {
+  background: #60A5FA;
+}
+
+::-webkit-scrollbar-corner,
+*::-webkit-scrollbar-corner,
+html::-webkit-scrollbar-corner,
+body::-webkit-scrollbar-corner {
+  background: #070b12;
+}
+
+/* Dedicated helper class preserved for existing Admin Dashboard & Modal components */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #1565F0 #070b12;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #070b12;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #1565F0;
+  border-radius: 9999px;
+  border: 2px solid #070b12;
+  transition: background-color 0.2s ease;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #2979FF;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:active {
+  background: #60A5FA;
+}
+
+/* Specific horizontal badge/pill bars that explicitly request hidden scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

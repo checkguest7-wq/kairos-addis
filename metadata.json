@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix Kairos Addis - Premium Electric Vehicles",
+  "description": "Premium electric vehicles for a new generation of Ethiopian drivers. Explore our lineup of luxury EVs with comprehensive warranty and service.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
